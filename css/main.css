@@ -113,7 +113,7 @@ html, body {
      background:none;
      position:absolute;
      top:0;
-     right:45%;
+     right:42.5%;
      line-height:45px;
      padding:5px 15px 0px 15px;
      color:#fff;
@@ -166,10 +166,15 @@ html, body {
    a{color:#336699;}
 
    .navbar {
+     display: block;
      position: fixed;
      top: 0;
      width: 100%;
    }
+
+.desktop-nav {
+  display: none;
+}
 
 /*=====HOME PAGE======*/
 .title {
@@ -233,13 +238,18 @@ h3 {
   margin: 5%;
 }
 
-footer {
+.footer-mobile {
+  display: block;
   text-align: center;
   border-top: solid 1px #ccc;
 }
 
-footer p {
+.footer-mobile p {
   margin: 2%;
+}
+
+.footer-desktop {
+  display: none;
 }
 
 /*=======RECIPE mobile==========*/
@@ -298,6 +308,65 @@ footer p {
   height: 55%;
   border: 5px solid #fff;
 }
+
+/*========CONTACT mobile============*/
+.contact-form {
+  margin: 30% 7% 5% 5%;
+}
+
+.contact-form h2 {
+  font-size: 2em;
+}
+
+input {
+width:100%;
+margin-bottom:20px;
+padding:5px;
+height:30px;
+box-shadow:1px 1px 12px gray;
+border-radius:3px;
+border:none
+}
+textarea {
+width:100%;
+height:80px;
+margin-top:10px;
+padding:5px;
+box-shadow:1px 1px 12px #222;
+border-radius:3px
+}
+#send {
+width:100%;
+height:45px;
+margin-top:40px;
+border-radius:3px;
+background-color:#ff3333;
+border:1px solid #fff;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px
+}
+
+/*
+div#feedback {
+text-align:center;
+height:520px;
+width:330px;
+padding:20px 25px 20px 15px;
+background-color:gray;
+border-radius:3px;
+border:1px solid #cd853f;
+font-family:'Raleway',sans-serif;
+float:left
+}
+*/
+
+.thanks {
+  font-family: 'Handlee', cursive;
+  margin: 30% 5% 5% 5%;
+}
+
+
 
 
 /* ==========================================================================
@@ -390,6 +459,87 @@ footer p {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (min-width: 940px) {
+/*=======NAVIGATION 940================*/
+    .navbar {display: none;}
+
+    .desktop-nav {
+      display: inline-block;
+      border-top: 2px solid #eee;
+      border-bottom: 2px solid #eee;
+      margin: 5%;
+      width: 90%;
+    }
+
+    .desktop-nav a {
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Amatic SC', cursive;
+      font-size: 2em;
+      color: #eee;
+      padding: 2% 5% 2% 10%;
+      position: relative;
+      left: 100px;
+    }
+
+/*=====HOME 940==============*/
+.title {
+  margin-top: 5%;
+}
+
+.cover-img {
+  background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:35%;
+	padding-bottom:35%;
+	margin-left: 32%;
+  margin-top: 2%;
+	border:1px solid #ccc;
+}
+
+#cover-img {background-image: url(../img/salmon-brussel-medium.jpg);
+}
+
+.author-img {
+  width: 25%;
+  padding-bottom: 15%;
+  margin: 2% 5% 10% 5%;
+  float: left;
+}
+
+#ashley-img {
+  background-image: url('../img/chefash-small.png');
+}
+
+/*======FOOTER 940=======*/
+.footer-mobile {
+  display: none;
+}
+
+.footer-desktop {
+  display: block;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.footer-desktop a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+}
+
+
 
 /* ==========================================================================
    Print styles.

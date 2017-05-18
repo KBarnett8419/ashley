@@ -12,8 +12,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Handlee" rel="stylesheet">
@@ -36,51 +36,48 @@
         </header>
 
         <nav class="menu">
-          <a href="#">Home</a>
-          <a href="recipes/index.html">Recipes</a>
-          <a href="shop/index.html">Shop</a>
-          <a href="contact/index.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="../recipes/index.html">Recipes</a>
+          <a href="../shop/index.html">Shop</a>
+          <a href="#">Contact</a>
         </nav>
     </div><!--navbar-->
 
-    <nav class="desktop-nav">
-      <a href="#">Home</a>
-      <a href="recipes/index.html">Recipes</a>
-      <a href="shop/index.html">Shop</a>
-      <a href="contact/index.html">Contact</a>
-    </nav>
+    <div class="contact-form">
 
-<div class="title">
-  <h1>The Millenial Cook Book</h1>
-    <h2>Simple organic recipes designed for beginners</h2>
-      <div class="cover-img" id="cover-img"></div>
-       <h3>By Ashley Cox</h3>
-</div>
+<h2>Contact Chef Ash</h2>
+<p>Has one of her recipes changed your life? Is there anything you want her to know? Fill out the form below and Chef Ash will respond within 24 hours.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="html-contact-form.php" id="form" method="post" name="form">
+              <input name="name" placeholder="Name" type="text" value="">
+              <input name="email" placeholder="Email" type="text" value="">
+              <input name="subject" placeholder="Subject" type="text" value="">
+              <textarea name="message" placeholder="Comment here..."></textarea>
 
-<section class="meet-chef-ash" id="meet-chef-ash">
-  <h1 class="about-title">Meet Chef Ash</h1>
-    <div class="author-img" id="ashley-img"></div>
-      <p class="about-ash">Surprise! "The Millenial Cook Book" was actually written by a millenial. Ashley Cox, or affectionately called "Chef Ash,"
-      has been cooking scrumptious healthy meals for the past 5 years. As a private chef who learned on the job, she learned that cooking wasn't as
-      hard as she imagined it to be. Her friends and family always complained about never having time to prepare healthy, cost-effective meals so
-      she decide to create a guide to help them out. Simple. Healthy. Delicious. The perfect book for millenials or just people in general.
-      <br><br>
-      "The secret to really good food is a sharp knife and untethered imagination."
-      <br>
-      -Chef Ash
-      </p>
-</section>
+              <img src="captcha_code_file.php"
+              id="captchaimg" >
+              <label for="message">Let's make sure you're a real person! Enter the code below:</label>
+              <input id="6_letters_code" name="6_letters_code" type="text">
 
-<footer class="footer-mobile"><p>Developed by <br><a href="http://barnettmarketing.org">Barnett Marketing Solutions</a><p></footer>
+              <input id="send" name="submit" type="submit" value="Submit">
+            </form>
+          </div>
+        <div class="col-md-6"></div>
+      </div><!--row-->
+    </div><!--container-->
 
-<footer "footer-desktop"><p>Developed by <a href="http://barnettmarketing.org">Barnett Marketing Solutions</a><p></footer>
+</div><!--contact-form-->
+
+<footer><p>Website created by <br><a href="http://barnettmarketing.org">Barnett Marketing Solutions</a><p></footer>
 
 <!--end of author input-->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
