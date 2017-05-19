@@ -128,7 +128,7 @@ html, body {
      background:none;
      position:absolute;
      top:0px;
-     right:45%;
+     right:42.5%;
      padding:7px 15px 0px 15px;
      color:#999;
      border:0;
@@ -234,7 +234,7 @@ h3 {
 }
 
 .about-ash {
-  font-family: 'Handlee', cursive;
+  font-family: 'Open Sans', sans-serif;
   margin: 5%;
 }
 
@@ -242,10 +242,17 @@ h3 {
   display: block;
   text-align: center;
   border-top: solid 1px #ccc;
+  font-family: 'Open Sans', sans-serif;
+  color: #ccc;
 }
 
 .footer-mobile p {
   margin: 2%;
+}
+
+.footer-mobile a {
+  text-decoration: none;
+  color: #ccc;
 }
 
 .footer-desktop {
@@ -263,30 +270,47 @@ h3 {
   margin-top: 30%;
 }
 
-.recipe-instructions {
-  font-family: 'Handlee', cursive;
-  font-size: 1.1em;
-  margin-top: 10%;
+.list-container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: auto;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.recipe-instructions h2 {
-  font-family: 'Handlee', cursive;
+.shopping-list {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin-top: 10%;
+  padding: 2% 4% 0 4%;
+  color: #262626;
+  text-align: left;
+}
+
+.shopping-list h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
   text-align: left;
   margin-top: 3%;
 }
 
-.recipe-instructions h3 {
-  font-family: 'Handlee', cursive;
-  text-align: left;
-  color: #ffff66;
-  font-weight: 200;
+.recipe-instructions {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding: 2%;
+  color: #262626;
 }
 
-.recipe-instructions span {
-  font-family: 'Handlee', cursive;
+.recipe-instructions p {
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
-  color: #ffff66;
+  color: #262626;
+  font-weight: 200;
+  padding: 0 2%;
 }
+
 
 .recipe-instructions ul {
   list-style-type: none;
@@ -295,8 +319,10 @@ h3 {
 }
 
 .recipe-instructions li {
+  list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 2%;
+  text-align: justify;
 }
 
 .recipe-image {
@@ -362,7 +388,7 @@ float:left
 */
 
 .thanks {
-  font-family: 'Handlee', cursive;
+  font-family: 'Open Sans', sans-serif;
   margin: 30% 5% 5% 5%;
 }
 
@@ -461,7 +487,98 @@ float:left
 }
 
 @media only screen and (min-width: 768px) {
-    /* Style adjustments for viewports that meet the condition */
+    .navbar {display: none;}
+
+    .desktop-nav {
+      display: inline-block;
+      border-top: 2px solid #eee;
+      border-bottom: 2px solid #eee;
+      margin: 5%;
+      width: 90%;
+    }
+
+    .desktop-nav a {
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Amatic SC', cursive;
+      font-size: 2em;
+      color: #eee;
+      padding: 2% 5% 2% 10%;
+      position: relative;
+      left: 20px;
+    }
+
+    /*=====HOME 768==============*/
+    .title {
+      margin-top: 5%;
+    }
+
+    .cover-img {
+      background-position:center;
+    	background-size:cover;
+    	background-repeat:no-repeat;
+    	width:35%;
+    	padding-bottom:35%;
+    	margin-left: 32%;
+      margin-top: 2%;
+    	border:1px solid #ccc;
+    }
+
+    #cover-img {background-image: url(../img/salmon-brussel-medium.jpg);
+    }
+
+    .author-img {
+      width: 25%;
+      padding-bottom: 15%;
+      margin: 2% 5% 10% 5%;
+      float: left;
+    }
+
+    #ashley-img {
+      background-image: url('../img/chefash-small.png');
+    }
+
+    /*======FOOTER 768=======*/
+    .footer-mobile {
+      display: none;
+    }
+
+    .footer-desktop {
+      display: block;
+      clear: both;
+      text-align: center;
+      font-size: 0.8em;
+      color: #ccc;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-desktop a {
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    /*======RECIPE 768==========*/
+    .shopping-list {
+      text-align: center;
+    }
+
+    .shopping-list h2 {
+      text-align: center;
+    }
+
+    #recipe-image {
+      width: 35%;
+      height: 35%;
+      border: 5px solid #fff;
+    }
+
+    .recipe-title {
+      margin-top: 3%;
+    }
+
+
+
+
 }
 
 @media only screen and (min-width: 940px) {
@@ -524,15 +641,36 @@ float:left
 
 .footer-desktop {
   display: block;
+  clear: both;
   text-align: center;
   font-size: 0.8em;
+  color: #ccc;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .footer-desktop a {
   text-decoration: none;
+  color: #ccc;
 }
 
+/*======RECIPE 940==========*/
+.shopping-list {
+  text-align: center;
+}
 
+.shopping-list h2 {
+  text-align: center;
+}
+
+#recipe-image {
+  width: 35%;
+  height: 35%;
+  border: 5px solid #fff;
+}
+
+.recipe-title {
+  margin-top: 3%;
+}
 
 
 
