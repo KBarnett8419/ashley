@@ -52,7 +52,7 @@
 
 <div class="recipe-container">
   <div class="recipe-title">
-    <h1>Pesto shrimp kabob recipe</h1>
+    <h1>Pesto shrimp kabob</h1>
   </div>
 
 <div class="recipe-image">
@@ -118,6 +118,20 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
+
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(e) {
+                  if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                      if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

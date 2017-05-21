@@ -83,6 +83,20 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(e) {
+                  if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                      if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+        </script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
