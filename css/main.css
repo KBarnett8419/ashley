@@ -170,6 +170,8 @@ html, body {
      font-size: 2em;
      font-weight: bold;
      padding-left: 3%;
+     margin-left: 10%;
+     float: left;
    }
 
    .glyphicon-home{
@@ -195,7 +197,7 @@ html, body {
 
 /*===NAV DROPDOWN mobile======*/
 .dropdown {
-    float: right;
+    float: left;
     overflow: visible;
 }
 
@@ -212,9 +214,10 @@ html, body {
     background-color: inherit;
     text-transform: uppercase;
     position: relative;
-    bottom: 2px;
-    right: 65px;
+    bottom: 1px;
+    right: 0;
     top: 1px;
+    left: 20px;
 
 }
 
@@ -675,7 +678,7 @@ float:left
       display: inline-block;
       border-top: 2px solid #eee;
       border-bottom: 2px solid #eee;
-      margin: 15% 5% 5% 5%;
+      margin: 2% 5% 5% 5%;
       width: 90%;
     }
 
@@ -711,6 +714,7 @@ float:left
         bottom: 0;
         right: 0;
         top: 3px;
+        left: 0;
 
     }
 
@@ -765,7 +769,7 @@ float:left
   float: left;
   margin-left: 10%;
   position: relative;
-  top: 15px;
+  top: 30px;
 }
 
 .header-desktop h1 {
@@ -773,13 +777,13 @@ float:left
   font-family: 'Mr De Haviland', cursive;
   font-weight: lighter;
   position: relative;
-  top: 20px;
+  top: 0;
   margin-left: 3%;
 }
 
 .header-wrapper {
   position: relative;
-  left: 15%;
+  left: 20%;
 }
 
 .title {
