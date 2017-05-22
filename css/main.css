@@ -101,6 +101,23 @@ html, body {
   background-color: #222;
   color: #fff;
 }
+
+/*=HEADER IMAGE mobile================*/
+.header-wrapper-mobile img {
+  float: left;
+  margin: 2%;
+}
+
+.header-wrapper-mobile h1 {
+  float: left;
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 2em;
+  position: relative;
+  bottom: 15px;
+  padding-left: 5px;
+
+}
+
 /*=HAMBURGER MENU mobile===============*/
    header{
    	width:100%;
@@ -113,7 +130,7 @@ html, body {
      background:none;
      position:absolute;
      top:0;
-     right:42.5%;
+     right:0;
      line-height:45px;
      padding:5px 15px 0px 15px;
      color:#fff;
@@ -128,7 +145,7 @@ html, body {
      background:none;
      position:absolute;
      top:0px;
-     right:42.5%;
+     right:0;
      padding:7px 15px 0px 15px;
      color:#999;
      border:0;
@@ -210,6 +227,7 @@ html, body {
     display: none;
     position: absolute;
     right: 5px;
+    margin-right: 0;
     background-color: #222;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
