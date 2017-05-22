@@ -49,9 +49,9 @@
                 </header>
 
                 <nav class="menu">
-                  <a href="#">Home</a>
+                  <a href="#" class="home-link">Home</a>
                   <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">Recipes</button>
+                    <button class="dropbtn" onclick="mobileFunction()">Recipes</button>
                       <div class="dropdown-content" id="mobileDropdown">
                         <a href="recipes/pesto-shrimp-kabob.html">Pesto Shrimp Kabob</a>
                         <a href="recipes/cayenne-maple-glazed-salmon.html">Cayenne and Maple Glazed Salmon</a>
@@ -59,8 +59,8 @@
                         <a href="#">Link 4</a>
                       </div>
                   </div>
-                  <a href="../shop/index.html">Shop</a>
-                  <a href="../contact/index.html">Contact</a>
+                  <a href="../shop/index.html" class="shop-link">Shop</a>
+                  <a href="../contact/index.html" class="contact-link">Contact</a>
                 </nav>
             </div><!--navbar-->
 
@@ -83,14 +83,14 @@
         <!--END OF COPY HEADER-->
 
 <div class="title">
-  <h1>The Millenial Cook Book</h1>
-    <h2>Simple organic recipes designed for beginners</h2>
+  <h2>The Millenial Cook Book</h2>
+    <h3>Simple organic recipes designed for beginners</h3>
       <div class="cover-img" id="cover-img"></div>
-       <h3>By Ashley Cox</h3>
+       <h4>By Ashley Cox</h4>
 </div>
 
 <section class="meet-chef-ash" id="meet-chef-ash">
-  <h1 class="about-title">Meet Chef Ash</h1>
+  <h4 class="about-title">Meet Chef Ash</h4>
     <div class="author-img" id="ashley-img"></div>
       <p class="about-ash">Surprise! "The Millenial Cook Book" was actually written by a millenial. Ashley Cox, or affectionately called "Chef Ash,"
       has been cooking scrumptious healthy meals for the past 5 years. As a private chef who learned on the job, she learned that cooking wasn't as
@@ -115,7 +115,7 @@
         <script src="js/main.js"></script>
 
         <script>
-          function myFunction() {
+          function mobileFunction() {
             document.getElementById("mobileDropdown").classList.toggle("show");
                 }
                 window.onclick = function(e) {
@@ -127,6 +127,7 @@
                             }
                           }
         </script>
+
 
         <script>
           function myFunction() {

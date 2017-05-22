@@ -195,6 +195,11 @@ html, body {
   display: none;
 }
 
+.contact-link {
+  position: relative;
+  right: 10px;
+}
+
 /*===NAV DROPDOWN mobile======*/
 .dropdown {
     float: left;
@@ -264,17 +269,17 @@ html, body {
   margin-top: 40%;
 }
 
-.title h1, h2 {
+.title h2, h3 {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   line-height: 15px;
 }
 
-.title h2 {
+.title h3 {
   font-weight: 400;
 }
 
-h3 {
+h4 {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   margin-bottom: 20%;
@@ -314,6 +319,7 @@ h3 {
 .about-title {
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  margin-bottom: 1%;
 }
 
 .about-ash {
@@ -776,6 +782,7 @@ float:left
 .header-desktop h1 {
   float: left;
   font-family: 'Mr De Haviland', cursive;
+  font-size: 1.5em;
   font-weight: lighter;
   position: relative;
   top: 0;
@@ -791,6 +798,18 @@ float:left
   margin-top: 5%;
 }
 
+.title h2 {
+  font-size: 3.5em;
+}
+
+.title h3 {
+  font-size: 2em;
+}
+
+.title h4 {
+  font-size: 2em;
+}
+
 .cover-img {
   background-position:center;
 	background-size:cover;
@@ -803,6 +822,15 @@ float:left
 }
 
 #cover-img {background-image: url(../img/salmon-brussel-medium.jpg);
+}
+
+.about-title {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.about-ash {
+  margin: 2% 5%;
 }
 
 .author-img {
