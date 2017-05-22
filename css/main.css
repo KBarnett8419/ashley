@@ -227,9 +227,10 @@ html, body {
 }
 
 .dropdown-content {
+  float: left;
     display: none;
     position: absolute;
-    right: 5px;
+    right: 0;
     margin-right: 0;
     background-color: #222;
     min-width: 160px;

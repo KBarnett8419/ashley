@@ -30,6 +30,8 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+
+<!--COPY HEADER ON EACH PAGE-->
 <section class="header-desktop">
   <div class="header-wrapper">
     <img src="../img/ashley-blue-circle.png" alt="chef-ash-main-picture" width="10%" height="15%">
@@ -51,7 +53,7 @@
           <a href="../index.html">Home</a>
           <div class="dropdown">
             <button class="dropbtn" onclick="myFunction()">Recipes</button>
-              <div class="dropdown-content" id="myDropdown">
+              <div class="dropdown-content" id="mobileDropdown">
                 <a href="../recipes/pesto-shrimp-kabob.html">Pesto Shrimp Kabob</a>
                 <a href="#">Cayenne and Maple Glazed Salmon</a>
                 <a href="#">Link 3</a>
@@ -79,6 +81,7 @@
       <a href="../contact/index.html">Contact</a>
     </div><!--nav-title-wrapper-->
     </nav>
+<!--END OF COPY HEADER-->
 
 <div class="recipe-container">
   <div class="recipe-title">
@@ -227,11 +230,11 @@ your food.
 
         <script>
           function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("mobileDropdown").classList.toggle("show");
                 }
                 window.onclick = function(e) {
                   if (!e.target.matches('.dropbtn')) {
-                    var myDropdown = document.getElementById("myDropdown");
+                    var myDropdown = document.getElementById("mobileDropdown");
                       if (myDropdown.classList.contains('show')) {
                         myDropdown.classList.remove('show');
                               }

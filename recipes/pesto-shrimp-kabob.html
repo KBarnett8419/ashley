@@ -18,6 +18,8 @@
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Handlee" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland|Norican|Open+Sans|Playball|Yesteryear" rel="stylesheet">
+
 
         <script type="text/javascript" src="//use.typekit.net/vue1oix.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -29,26 +31,56 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-    <div class="navbar">
-        <header>
-          <button class="hamburger">&#9776;</button>
-          <button class="cross">&#735;</button>
-        </header>
+        <section class="header-desktop">
+          <div class="header-wrapper">
+            <img src="../img/ashley-blue-circle.png" alt="chef-ash-main-picture" width="10%" height="15%">
+              <h1>Simply.Chef Ash.</h1>
+          </div>
+        </section>
 
-        <nav class="menu">
-          <a href="../index.html">Home</a>
-          <a href="#">Recipes</a>
-          <a href="../shop/index.html">Shop</a>
-          <a href="../contact/index.html">Contact</a>
-        </nav>
-    </div><!--navbar-->
+            <div class="navbar">
+                <header>
+                  <div class="header-wrapper-mobile">
+                    <img src="../img/ashley-blue-circle.png" alt="chef-ash-main-picture" width="10%" height="15%" >
+                      <h1>Simply.ChefAsh.</h1>
+                  </div>
+                  <button class="hamburger">&#9776;</button>
+                  <button class="cross">&#735;</button>
+                </header>
 
-    <nav class="desktop-nav">
-      <a href=../index.html>Home</a>
-      <a href="#">Recipes</a>
-      <a href="../shop/index.html">Shop</a>
-      <a href="../contact/index.html">Contact</a>
-    </nav>
+                <nav class="menu">
+                  <a href="../index.html">Home</a>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Recipes</button>
+                      <div class="dropdown-content" id="mobileDropdown">
+                        <a href="#">Pesto Shrimp Kabob</a>
+                        <a href="../recipes/cayenne-maple-glazed-salmon.html">Cayenne and Maple Glazed Salmon</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                      </div>
+                  </div>
+                  <a href="../shop/index.html">Shop</a>
+                  <a href="../contact/index.html">Contact</a>
+                </nav>
+            </div><!--navbar-->
+
+            <nav class="desktop-nav">
+              <div class="nav-title-wrapper">
+              <a href="../index.html">Home</a>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Recipes</button>
+                  <div class="dropdown-content" id="myDropdown-desktop">
+                    <a href="#">Pesto Shrimp Kabob</a>
+                    <a href="../recipes/cayenne-maple-glazed-salmon.html">Cayenne and Maple Glazed Salmon</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                  </div>
+              </div>
+              <a href="../shop/index.html">Shop</a>
+              <a href="../contact/index.html">Contact</a>
+            </div><!--nav-title-wrapper-->
+            </nav>
+        <!--END OF COPY HEADER-->
 
 <div class="recipe-container">
   <div class="recipe-title">
@@ -121,11 +153,25 @@
 
         <script>
           function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("mobileDropdown").classList.toggle("show");
                 }
                 window.onclick = function(e) {
                   if (!e.target.matches('.dropbtn')) {
-                    var myDropdown = document.getElementById("myDropdown");
+                    var myDropdown = document.getElementById("mobileDropdown");
+                      if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+        </script>
+
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown-desktop").classList.toggle("show");
+                }
+                window.onclick = function(e) {
+                  if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown-desktop");
                       if (myDropdown.classList.contains('show')) {
                         myDropdown.classList.remove('show');
                               }
