@@ -324,7 +324,9 @@ h4 {
 
 .about-ash {
   font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
   margin: 5%;
+  text-align: justify;
 }
 
 .footer-mobile {
